@@ -9,15 +9,9 @@
 	echo("<p>Hola Mundo</p>");
 	?>
 	<form>
-		<textarea>
-			
-		</textarea>
-		<textarea>
-			
-		</textarea>
-		<button>
-			Clikme
-		</button>
+		<input type="text" name="Usuario" placeholder="Usuario">
+		<input type="password" name="Contraseña" placeholder="Contraseña">
+		<input type="submit" name="Entrar" class="btn" value="Iniciar secion">
 	</form>
 </body>
 </html>
