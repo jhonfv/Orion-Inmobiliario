@@ -8,6 +8,16 @@
 	<?php
 	echo("<p>Hola Mundo</p>");
 	?>
-	<button>Clikme</button>
+	<form>
+		<textarea>
+			
+		</textarea>
+		<textarea>
+			
+		</textarea>
+		<button>
+			Clikme
+		</button>
+	</form>
 </body>
 </html>
