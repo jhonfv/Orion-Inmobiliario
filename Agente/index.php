@@ -2,6 +2,8 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#000">
 	<title>Inicio</title>
 </head>
 <body>
