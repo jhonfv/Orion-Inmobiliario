@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="mobile-web-app-capable" content="yes">
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#F16835">
 	<title>Inicio</title>
 </head>
 <body>
@@ -16,6 +16,9 @@
 			<input class="formulario-input" type="password" name="Contraseña" placeholder="Contraseña">
 			<input type="submit" name="Entrar" class="btn" value="Iniciar secion">
 		</form>
+		<div class="enlace">
+			<a href="#">Olvide mi contraseña</a>
+		</div>
 	</div>
 </body>
 </html>

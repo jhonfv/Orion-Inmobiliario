@@ -45,6 +45,13 @@ body{
 .formulario .btn:hover{
 	background: #4357ad;
 }
+.enlace{
+	padding-top:  10px;
+	color: black;
+}
+.enlace a{
+	text-decoration: none;
+}
 
 @media screen and (max-width: 500px){
 	.contenedor{
