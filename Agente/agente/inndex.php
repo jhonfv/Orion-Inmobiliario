@@ -10,21 +10,17 @@
     <title>Inicio</title>
 </head>
 <body>
-    1
     <?php session_start() ?>
     <?php 
-        var_dump($_SESSION['usuario']);
-        die();
-        k
-        echo "Hola";
+        //var_dump($_SESSION['usuario']);
+        // die();
     ?>
         <?php if(isset($_SESSION['error_login'])){
             echo("<h3> ".$_SESSION['error_login']." error</h3>");
         }
         else{
-            echo "hola ".$_SESSION['usuario']['nombre'];
+            echo "<h1>hola ".$_SESSION['usuario']['nombre']."</h1>";
         }
     ?>
-    4
 </body>
 </html>

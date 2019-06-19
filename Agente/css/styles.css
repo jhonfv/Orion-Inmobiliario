@@ -42,6 +42,14 @@ body{
 	border-radius: 0 0 6px 6px;
 	font-size: 18px;
 }
+.error_login ul {
+	margin-top: 20px;
+	border-radius: 3px;
+	background: #ce1818;
+	color: #fff;
+	padding: 15px 16px;
+	padding-left: 40px;
+}
 .formulario .btn:hover{
 	background: #4357ad;
 }
@@ -50,7 +58,7 @@ body{
 	color: black;
 }
 .enlace a{
-	text-decoration: none;
+	text-decoration: all;
 }
 
 @media screen and (max-width: 500px){

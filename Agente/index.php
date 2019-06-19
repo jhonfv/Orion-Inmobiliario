@@ -12,23 +12,16 @@
 <body>
 	<div class="contenedor">
 		<img class="img" src="https://www.habitarinversiones.com/wp-content/uploads/2016/07/logo-habitar-e1468550422973.png">
-
-		<div id="login" class="block-aside">
-	    <h3>Logueate</h3>
-	    <?php session_start() ?>
-	    <?php if(isset($_SESSION['error_login'])){
-	    echo("<h3> ".$_SESSION['error_login']." error</h3>");
-	    }
-	    else{
-			echo "hola ".$_SESSION['usuario']['nombre'];
-		}
-	    ?>
-
 		<form action="login.php" method="post" class="formulario" id="formulario" name="formulario">
 			<input class="formulario-input" type="text" name="user" placeholder="Usuario">
 			<input class="formulario-input" type="password" name="password" placeholder="Contraseña">
 			<input type="submit" name="out" class="btn" value="Iniciar secion">
 		</form>
+		<?php session_start() ?>
+	    <?php if(isset($_SESSION['error_login'])){
+	    echo("<ul class='error_login'><li>".$_SESSION['error_login']." error!</li></ul>");
+	    }
+	    ?>
 		<div class="enlace">
 			<a href="#">Olvide mi contraseña</a>
 		</div>

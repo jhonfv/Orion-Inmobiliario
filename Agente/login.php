@@ -3,12 +3,13 @@
 require_once 'conexion.php';
 
 // recoger datos de formulario
+$error=0;
 if(isset($_POST)){
     $cedula= trim($_POST['user']);
     $password=$_POST['password'];
 
     //cunsulta para comprobar credencialels
-    $sql="select * from agente where cedula='$cedula'";
+    $sql="select * from Prueba_agente where cedula='$cedula'";
     $login= mysqli_query($db, $sql); 
     if($login && mysqli_num_rows($login)==1){
         $usuario= mysqli_fetch_assoc($login);
@@ -24,16 +25,18 @@ if(isset($_POST)){
             
         } else {
             //si falla, enviar session de error
-
+            $error=1;
             $_SESSION['error_login']="Login incorrecto";
         }
     } else {
+        $error=1;
          $_SESSION['error_login']="Login incorrecto";    
     }   
 }
 
-//var_dump($_SESSION['usuario']);
-//var_dump($_SESSION['error_login']);
-//die();
-
-header("Location: inndex.php");
+if ($error==1) {
+    header("Location: index.php");
+}
+else{
+    header("Location: agente/inndex.php");
+}
