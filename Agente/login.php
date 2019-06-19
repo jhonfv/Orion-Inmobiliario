@@ -18,23 +18,22 @@ if(isset($_POST)){
         if($verify){
             // utilizar sesion para guardar usuario logeados
             $_SESSION['usuario']=$usuario;
+            //destruir session de error caducada
             if(isset($_SESSION['error_login'])){
                 unset($_SESSION["error_login"]);
-                //session_unset($_SESSION['error_login']); 
             }
             
         } else {
-            //si falla, enviar session de error
             $error=1;
-            $_SESSION['error_login']="Login incorrecto";
         }
     } else {
         $error=1;
-         $_SESSION['error_login']="Login incorrecto";    
     }   
 }
 
 if ($error==1) {
+    //si falla, enviar session de error
+    $_SESSION['error_login']="Login incorrecto";
     header("Location: index.php");
 }
 else{
