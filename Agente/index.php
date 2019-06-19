@@ -18,6 +18,12 @@
 			<input type="submit" name="out" class="btn" value="Iniciar secion">
 		</form>
 		<?php session_start() ?>
+		<?php 
+		if (isset($_SESSION['usuario'])) {
+			unset($_SESSION['usuario']);
+		}
+
+		?>
 	    <?php if(isset($_SESSION['error_login'])){
 	    echo("<ul class='error_login'><li>".$_SESSION['error_login']." error!</li></ul>");
 	    }

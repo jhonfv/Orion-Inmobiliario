@@ -38,5 +38,5 @@ if ($error==1) {
     header("Location: index.php");
 }
 else{
-    header("Location: agente/inndex.php");
+    header("Location: agente/index.php");
 }

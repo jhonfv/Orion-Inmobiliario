@@ -42,7 +42,7 @@ body{
 	border-radius: 0 0 6px 6px;
 	font-size: 18px;
 }
-.error_login ul {
+.error_login li {
 	margin-top: 20px;
 	border-radius: 3px;
 	background: #ce1818;
@@ -58,12 +58,12 @@ body{
 	color: black;
 }
 .enlace a{
-	text-decoration: all;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 500px){
 	.contenedor{
 	width: 70%;
 	margin: 20% auto;
-}
+	}
 }

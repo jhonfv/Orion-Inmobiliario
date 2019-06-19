@@ -15,11 +15,11 @@
         //var_dump($_SESSION['usuario']);
         // die();
     ?>
-        <?php if(isset($_SESSION['error_login'])){
-            echo("<h3> ".$_SESSION['error_login']." error</h3>");
+        <?php if (isset($_SESSION['usuario'])) {
+            echo "<h1>hola ".$_SESSION['usuario']['nombre']."</h1>";
         }
         else{
-            echo "<h1>hola ".$_SESSION['usuario']['nombre']."</h1>";
+            header("Location:../index.php");
         }
     ?>
 </body>
