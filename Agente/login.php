@@ -1,7 +1,7 @@
 <?php
 //iniciar sesion y conexion adb
 require_once 'conexion.php';
-
+session_start();
 // recoger datos de formulario
 $error=0;
 if(isset($_POST)){
@@ -18,6 +18,8 @@ if(isset($_POST)){
         if($verify){
             // utilizar sesion para guardar usuario logeados
             $_SESSION['usuario']=$usuario;
+            //var_dump($_SESSION['usuario']);
+            //die();
             //destruir session de error caducada
             if(isset($_SESSION['error_login'])){
                 unset($_SESSION["error_login"]);

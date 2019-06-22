@@ -18,11 +18,11 @@
         <title>Inicio</title>
     </head>
     <body>
-        <?php //session_start() ?>
         <?php require_once 'inmuebles.php';?>
+        <?php //session_start() ?>
         <?php 
             //var_dump($_SESSION['usuario']);
-            // die();
+            //die();
         ?>
             <?php if (isset($_SESSION['usuario'])) {
             }
