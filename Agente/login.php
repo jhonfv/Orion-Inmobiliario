@@ -8,7 +8,7 @@ if(isset($_POST)){
     $cedula= trim($_POST['user']);
     $password=$_POST['password'];
 
-    //cunsulta para comprobar credencialels
+    //consulta para comprobar credencialels
     $sql="select * from Prueba_agente where cedula='$cedula'";
     $login= mysqli_query($db, $sql); 
     if($login && mysqli_num_rows($login)==1){
@@ -16,7 +16,7 @@ if(isset($_POST)){
         //comprobar contraseña
         $verify = password_verify($password, $usuario['contraseña']);
         if($verify){
-            // utilizar sesion para guardar usuario logeados
+            // utilizar session para guardar usuario logeados
             $_SESSION['usuario']=$usuario;
             //var_dump($_SESSION['usuario']);
             //die();
@@ -31,6 +31,8 @@ if(isset($_POST)){
     } else {
         $error=1;
     }   
+}else {
+    $_SESSION['error_login']="Datos vacios ";
 }
 
 if ($error==1) {
@@ -39,5 +41,7 @@ if ($error==1) {
     header("Location: index.php");
 }
 else{
+    //var_dump($_SESSION["usuario"]);
+    //die();
     header("Location: agente/index.php");
 }
