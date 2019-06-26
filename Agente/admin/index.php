@@ -91,8 +91,8 @@
 			  	<div class="form-group">
 				    <label for="estado">Estado:</label>
 				    <select class="form-control" name="estado">
-				      <option>Activo</option>
-				      <option>Finalizado</option>
+				      <option value="1">Activo</option>
+				      <option value="0">Finalizado</option>
 				    </select>
 				</div> 
 				<!--Gestion-->
