@@ -1,2 +1,2 @@
 <?php
-echo("Estas lejos de casa!");
+echo("Estas lejos de casa");

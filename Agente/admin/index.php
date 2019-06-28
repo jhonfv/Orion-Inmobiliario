@@ -114,7 +114,7 @@
 				<!--Fotos-->
 				<label for="fotos">Fotos:</label>
 				<div class="custom-file">
-				  	<input type="file" class="custom-file-input" lang="es" id="nombre[]" name="nombre[]" multiple="">
+				  	<input type="file" class="custom-file-input" lang="es" id="fotos[]" name="fotos[]" multiple="">
                     <label class="custom-file-label" for="fotos">Seleccionar Archivo</label>
 				</div>
 			</div>

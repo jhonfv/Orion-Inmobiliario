@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="shortcut icon" type="image/png" href="../img/favicon.ico"/>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="../agente/css/styles_menu.css">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="mobile-web-app-capable" content="yes">
@@ -95,3 +95,5 @@
             <div class="overlay"></div>
         </div>
         <!--**********End MENU**************-->
+        <div style="margin-left: 17%; margin-right: 17%; margin-top: 100px;">    
+        </div>

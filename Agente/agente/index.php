@@ -5,9 +5,6 @@
             require_once ('../helps/user_header.php');            
         ?>
         
-        
-        <div style="margin-left: 17%; margin-right: 17%; margin-top: 100px;">    
-        </div>
         <!--********Form Search********-->
         <div class="row" style="margin-right: 15px; margin-left: 15px;">
             <div class="col-lg-8 mx-auto" >
@@ -62,6 +59,7 @@
                  <!-- List group-->
                 <ul class="list-group shadow">
                     <!-- list group item -->
+                    <?php echo("<a href='../inmueble/index.php?codigo=".$inmueble['Codigo_Inmueble']."'>'")?>
                     <li class="list-group-item">
                         <!-- Custom content-->
                         <div class="media align-items-lg-center flex-column flex-lg-row p-3">
@@ -77,7 +75,7 @@
                             <img src="https://cdn.pixabay.com/photo/2016/07/26/18/30/kitchen-1543493_960_720.jpg" alt="Foto inmueble" width="200" class="ml-lg-5 order-1 order-lg-2">
                         </div>
                         <!-- End -->
-                    </li>
+                    </li></a>
                     <!-- End -->
                 </ul>
                 <!-- End -->
