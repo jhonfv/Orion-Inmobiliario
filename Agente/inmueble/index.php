@@ -21,4 +21,4 @@ $inmueble=mysqli_fetch_array($data);?>
     </div>
 </section>
 </body>
-</html>
+</html>                

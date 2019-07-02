@@ -21,7 +21,7 @@ $baños=$_POST['baños'];
 //var_dump($_FILES['fotos']["name"]["1"]);
 //$sql="insert into Inmuebles = values('')";
 mysqli_query($db, $sql); 
-
+//Antes de crear las carpetas validar los registros en db
 mkdir('../inmueble/img/'.$_POST['codigo']);
 copy('../helps/index.php','../inmueble/img/'.$_POST["codigo"].'/index.php');
 $i=0;
