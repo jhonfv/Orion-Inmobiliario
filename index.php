@@ -1,3 +1,2 @@
-<?php
-echo("next")
-?>
+<?php 
+echo("Next");
